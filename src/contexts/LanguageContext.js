@@ -1,5 +1,6 @@
 /* eslint-disable no-useless-constructor */
 import React, { Component } from "react";
+import LanguageApiService from "../services/language-api-service";
 
 const LanguageContext = React.createContext({
   language: {},
@@ -9,12 +10,26 @@ const LanguageContext = React.createContext({
 
 export default LanguageContext;
 
-export class LanguageProvide extends Component {
+export class LanguageProvider extends Component {
   state = {
     language: {},
     words: [],
     error: null,
   };
+
+  componentDidMount() {
+    LanguageApiService.getLanguage()
+      .then((res) => {
+        this.setState({
+          language: res.language,
+          words: res.words,
+        });
+      })
+      .catch((error) => {
+        this.setState(error);
+      });
+  }
+
   render() {
     const languageValue = {
       language: this.state.language,

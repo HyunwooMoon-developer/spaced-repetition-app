@@ -13,7 +13,6 @@ const LanguageApiService = {
   },
   getNextWord() {
     return fetch(`${config.API_ENDPOINT}/language/head`, {
-      method: "POST",
       headers: {
         authorization: `Bearer ${TokenService.getAuthToken()}`,
       },
@@ -23,6 +22,7 @@ const LanguageApiService = {
   },
   getGuess(word) {
     return fetch(`${config.API_ENDPOINT}/language/guess`, {
+      method: "POST",
       headers: {
         authorization: `Bearer ${TokenService.getAuthToken()}`,
       },
