@@ -13,8 +13,8 @@ class Header extends Component {
 
   renderLogoutLink() {
     return (
-      <div>
-        <span>
+      <div className="logout-nav">
+        <span className="login-username">
           {this.context.user.name}
         </span>
         <nav>
@@ -30,11 +30,13 @@ class Header extends Component {
 
   renderLoginLink() {
     return (
+      <div className="login-nav">
       <nav>
         <Link to='/login'>Login</Link>
         {' '}
         <Link to='/register'>Sign up</Link>
       </nav>
+      </div>
     )
   }
 

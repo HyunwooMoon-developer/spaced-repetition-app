@@ -1,0 +1,54 @@
+.dashboard-container{
+    color: white;
+    margin: 0 auto;
+}
+
+.dashboard-container p{
+    font-weight: bold;
+}
+
+.dashboard-container button{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    font-size: 17px;
+    background-color: black;
+}
+
+.dashboard-container a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.word-list{
+    list-style-type: none;
+    padding: 0 15%;
+}
+
+.word-list h4{
+    text-align: center;
+    margin-left: 10px;
+}
+
+.word-list li{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width : 600px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom : 20px;
+    background-color: rgb(233, 192, 10);
+}
+
+.word-list div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-right: 10px;
+}

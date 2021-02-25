@@ -1,13 +1,17 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
+import Dashboard from "../../components/Dashboard/Dashboard";
 
 class DashboardRoute extends Component {
+  static defaultProps = {
+    history: {
+      push: () => {},
+    },
+  };
   render() {
-    return (
-      <section>
-        implement and style me
-      </section>
-    );
+    return <section className="dashboard-form">
+      <Dashboard />
+    </section>;
   }
 }
 
-export default DashboardRoute
+export default DashboardRoute;
