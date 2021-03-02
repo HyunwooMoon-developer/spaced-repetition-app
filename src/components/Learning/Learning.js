@@ -120,6 +120,8 @@ class Learning extends Component {
           <p>
             Your total score is: <span>{this.context.totalScore}</span>
           </p>
+        </div>
+        <div className="DisplayCorrect">
           <p>
             You have answered this word correctly{" "}
             <span>{this.context.wordCorrectCount}</span> times.
