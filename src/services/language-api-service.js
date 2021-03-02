@@ -5,8 +5,8 @@ const LanguageApiService = {
   getLanguage() {
     return fetch(`${config.API_ENDPOINT}/language`, {
       headers: {
-        'content-type': 'application/json',
-        'authorization': `Bearer ${TokenService.getAuthToken()}`,
+        "content-type": "application/json",
+        authorization: `Bearer ${TokenService.getAuthToken()}`,
       },
     }).then((res) =>
       !res.ok ? res.json().then((err) => Promise.reject(err)) : res.json()
@@ -15,8 +15,8 @@ const LanguageApiService = {
   getNextWord() {
     return fetch(`${config.API_ENDPOINT}/language/head`, {
       headers: {
-        'content-type': 'application/json',
-        'authorization': `Bearer ${TokenService.getAuthToken()}`,
+        "content-type": "application/json",
+        authorization: `Bearer ${TokenService.getAuthToken()}`,
       },
     }).then((res) =>
       !res.ok ? res.json().then((err) => Promise.reject(err)) : res.json()
@@ -24,12 +24,12 @@ const LanguageApiService = {
   },
   getGuess(guess) {
     return fetch(`${config.API_ENDPOINT}/language/guess`, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'content-type': 'application/json',
-        'authorization': `Bearer ${TokenService.getAuthToken()}`,
+        "content-type": "application/json",
+        authorization: `Bearer ${TokenService.getAuthToken()}`,
       },
-      body: JSON.stringify({guess}),
+      body: JSON.stringify({ guess }),
     }).then((res) =>
       !res.ok ? res.json().then((err) => Promise.reject(err)) : res.json()
     );

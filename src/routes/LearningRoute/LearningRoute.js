@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import Learning from '../../components/Learning/Learning'
+import React, { Component } from "react";
+import Learning from "../../components/Learning/Learning";
 
 class LearningRoute extends Component {
   render() {
@@ -11,4 +11,4 @@ class LearningRoute extends Component {
   }
 }
 
-export default LearningRoute
+export default LearningRoute;

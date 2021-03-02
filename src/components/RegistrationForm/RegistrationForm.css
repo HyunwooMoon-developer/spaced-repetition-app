@@ -1,45 +1,44 @@
-
-.registration-form{
-    max-height: 100vh;
-    max-width: 350px;
-    margin: 0 auto;
+.registration-form {
+  max-height: 100vh;
+  max-width: 350px;
+  margin: 0 auto;
 }
 
-.registration-form-p{
-    margin-bottom: 10px;
+.registration-form-p {
+  margin-bottom: 10px;
 }
 
-.registration-form-input{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top : 10px;
+.registration-form-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
 }
 
-.registration-form-input label{
-    font-weight: bold;
-    margin-bottom: 10px;
+.registration-form-input label {
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.registration-form-footer{
-    display : flex;
-    flex-direction: column;
-    margin-top : 30px;
+.registration-form-footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
 }
 
-.registration-form-footer button{
-    display: inline-block;
-    padding: 10px;
-    cursor: pointer;
-    outline: none;
-    color: white;
-    font-size: 17px;
-    background-color: black;
+.registration-form-footer button {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  font-size: 17px;
+  background-color: black;
 }
 
-.registration-form-footer a{
-    margin : 10px;
-    text-decoration: none;
-    color : black;
-    font-weight: bold;
+.registration-form-footer a {
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }

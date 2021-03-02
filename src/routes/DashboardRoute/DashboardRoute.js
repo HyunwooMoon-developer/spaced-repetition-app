@@ -8,9 +8,11 @@ class DashboardRoute extends Component {
     },
   };
   render() {
-    return <section className="dashboard-form">
-      <Dashboard />
-    </section>;
+    return (
+      <section className="dashboard-form">
+        <Dashboard />
+      </section>
+    );
   }
 }
 

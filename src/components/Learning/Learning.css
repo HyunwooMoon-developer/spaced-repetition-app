@@ -1,0 +1,52 @@
+.DisplayWord {
+  margin-bottom: 50px;
+}
+
+.DisplayWord h2 {
+  font-size: 1em;
+}
+
+.DisplayWord span {
+  margin-top: 50px;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+
+.DisplayForm {
+  margin: 0 auto;
+}
+
+.DisplayForm input[type="text"] {
+  height: 30px;
+  margin: 8px 0;
+  padding: 12px 20px;
+}
+
+.DisplayForm button {
+  width: 15%;
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  font-size: 17px;
+  background-color: black;
+}
+
+.DisplayScore {
+  margin-top: 30px;
+}
+
+.DisplayScore span {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: red;
+}
+
+.DisplayFeedback span {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: red;
+}

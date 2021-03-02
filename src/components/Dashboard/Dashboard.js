@@ -5,10 +5,7 @@ import Button from "../Button/Button";
 import "./Dashboard.css";
 
 class Dashboard extends Component {
-
   static contextType = LanguageContext;
-
-
 
   render() {
     const { language, words, error } = this.context;
@@ -27,11 +24,13 @@ class Dashboard extends Component {
     return (
       <div className="dashboard-container">
         <div role="alert">{error && <p>{error}</p>}</div>
-        <h2>{language.name}</h2>
-        <h3>Words to practice</h3>
-        <Link to="/learn">
-          <Button>Start practicing</Button>
-        </Link>
+        <div className="dashboard-top">
+          <h2>{language.name}</h2>
+          <h3>Words to practice</h3>
+          <Link to="/learn">
+            <Button>Start practicing</Button>
+          </Link>
+        </div>
         <ul className="word-list">{wordList}</ul>
         <p>Total correct answers: {language.total_score}</p>
       </div>

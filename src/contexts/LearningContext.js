@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-
 const LearningContext = React.createContext({
   totalScore: 0,
   wordCorrectCount: 0,
@@ -12,13 +11,13 @@ const LearningContext = React.createContext({
   answer: null,
   error: null,
   setTotalScore: () => {},
-  setWordCorrectCount : ()=>{},
-  setWordIncorrectCount : () => {},
-  setNextWord : ()=>{},
-  setGuess : () => {},
-  setPreviousWord : () => {},
-  setIsCorrect : () => {},
-  setAnswer  : () => {},
+  setWordCorrectCount: () => {},
+  setWordIncorrectCount: () => {},
+  setNextWord: () => {},
+  setGuess: () => {},
+  setPreviousWord: () => {},
+  setIsCorrect: () => {},
+  setAnswer: () => {},
 });
 
 export default LearningContext;
@@ -77,36 +76,35 @@ export class LearningProvider extends Component {
     });
   };
 
-  setAnswer = answer => {
-      this.setState({
-          answer
-      })
+  setAnswer = (answer) => {
+    this.setState({
+      answer,
+    });
   };
-  render(){
-      const learningValue = {
-        totalScore: this.state.totalScore,
-        wordCorrectCount: this.state.wordCorrectCount,
-        wordIncorrectCount: this.state.wordIncorrectCount,
-        nextWord: this.state.nextWord,
-        guess: this.state.guess,
-        previousWord: this.state.previousWord,
-        isCorrect: this.state.isCorrect,
-        answer: this.state.answer,
-        error: this.state.error,
-        setTotalScore: this.setTotalScore,
-        setWordCorrectCount : this.setWordCorrectCount,
-        setWordIncorrectCount : this.setWordIncorrectCount,
-        setNextWord : this.setNextWord,
-        setGuess : this.setGuess,
-        setPreviousWord : this.setPreviousWord,
-        setIsCorrect : this.setIsCorrect,
-        setAnswer  : this.setAnswer,
-
-      }
-      return(
-          <LearningContext.Provider value={learningValue}>
-              {this.props.children}
-          </LearningContext.Provider>
-      )
+  render() {
+    const learningValue = {
+      totalScore: this.state.totalScore,
+      wordCorrectCount: this.state.wordCorrectCount,
+      wordIncorrectCount: this.state.wordIncorrectCount,
+      nextWord: this.state.nextWord,
+      guess: this.state.guess,
+      previousWord: this.state.previousWord,
+      isCorrect: this.state.isCorrect,
+      answer: this.state.answer,
+      error: this.state.error,
+      setTotalScore: this.setTotalScore,
+      setWordCorrectCount: this.setWordCorrectCount,
+      setWordIncorrectCount: this.setWordIncorrectCount,
+      setNextWord: this.setNextWord,
+      setGuess: this.setGuess,
+      setPreviousWord: this.setPreviousWord,
+      setIsCorrect: this.setIsCorrect,
+      setAnswer: this.setAnswer,
+    };
+    return (
+      <LearningContext.Provider value={learningValue}>
+        {this.props.children}
+      </LearningContext.Provider>
+    );
   }
 }
