@@ -1,5 +1,20 @@
 # Spaced Repetition Capstone
 
+## Link
+
+Live app : https://spaced-repetition-pj5jxyjdq-hyunwoomoon-developer.vercel.app/
+
+Server Repo : https://github.com/HyunwooMoon-developer/spaced-repetition-server.git
+
+Client Repo : https://github.com/HyunwooMoon-developer/spaced-repetition-app.git
+
+
+![Screenshot](./src/img/login-image.png)
+
+![Screenshot](./src/img/display-image.png)
+
+![Screenshot](./src/img/learning-image.png)
+
 ## Setup
 
 To setup the application
